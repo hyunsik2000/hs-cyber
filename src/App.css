@@ -11,3 +11,24 @@ body {
     "Noto Sans KR",
     sans-serif;
 }
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.outlet-content {
+  padding-top: 88px;
+}
