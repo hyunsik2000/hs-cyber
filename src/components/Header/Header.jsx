@@ -1,5 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
+import LogoIcon from "../../assets/icons/Header/Logo.svg?react";
+import SearchBarIcon from "../../assets/icons/Header/SearchBar.svg?react";
+import HeartIcon from "../../assets/icons/Header/Heart.svg?react";
+import CartIcon from "../../assets/icons/Header/Cart.svg?react";
+import ProfileIcon from "../../assets/icons/Header/Profile.svg?react";
+import MenuIcon from "../../assets/icons/Header/Menu.svg?react";
+
 import "./Header.css";
+import { PATH } from "../../constants/path";
 
 export default function Header() {
   return (
@@ -8,169 +16,35 @@ export default function Header() {
         <ul className="header-section">
           <li className="header-logo">
             <a href="/">
-              <svg
-                width="96"
-                height="29"
-                viewBox="0 0 96 29"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.42812 9.39935L8.91177 7.39026L6.96725 4.02409H25.2549L16.114 19.862L14.1695 16.49L10.6859 18.505L16.114 27.9044L32.2221 0H0L5.42812 9.39935Z"
-                  fill="black"
-                ></path>
-                <path
-                  d="M44.736 21.488C43.68 22.76 42.072 23.408 40.152 23.408C36.36 23.408 34.056 20.96 34.056 17.408C34.056 13.88 36.384 11.432 40.152 11.432C41.976 11.432 43.728 12.128 44.784 13.4L42.888 15.392C42.12 14.552 41.28 14.216 40.152 14.216C38.544 14.216 37.152 15.512 37.152 17.408C37.152 19.472 38.448 20.624 40.152 20.624C41.16 20.624 42.312 20.24 42.936 19.448L44.736 21.488Z"
-                  fill="black"
-                ></path>
-                <path
-                  d="M59.3568 11.72L52.3728 28.28H48.9408L51.1728 23.12L46.3488 11.72H49.7568L52.1568 17.816L52.8528 20L53.5248 17.816L55.9249 11.72H59.3568Z"
-                  fill="black"
-                ></path>
-                <path
-                  d="M67.2028 14.264C65.4748 14.264 64.2268 15.584 64.2268 17.384C64.2268 19.16 65.4748 20.48 67.2028 20.48C68.8828 20.48 70.0348 19.232 70.0348 17.384C70.0348 15.512 68.8828 14.264 67.2028 14.264ZM61.2268 23V5.408H64.2748V11.672L64.2268 12.488C64.7308 11.816 66.2668 11.432 67.3228 11.432C71.0908 11.432 73.2028 14.192 73.2028 17.384C73.2028 20.984 71.0428 23.312 67.3228 23.312C66.4108 23.312 64.9468 22.88 64.3468 22.16L64.3708 22.808V23H61.2268Z"
-                  fill="black"
-                ></path>
-                <path
-                  d="M85.8911 21.56C85.0031 22.712 82.9631 23.408 81.2111 23.408C77.3951 23.408 75.2591 20.792 75.2591 17.408C75.2591 13.952 77.3711 11.432 81.0911 11.432C84.7871 11.432 86.8991 13.952 86.8991 17.408C86.8991 17.792 86.8991 18.032 86.8751 18.368H78.3791C78.5471 19.784 79.6031 20.672 81.2111 20.672C82.3631 20.672 83.4431 20.288 84.1151 19.544L85.8911 21.56ZM78.4271 16.304H83.7071C83.5631 15.032 82.5071 14.168 81.0911 14.168C79.6751 14.168 78.5471 15.032 78.4271 16.304Z"
-                  fill="black"
-                ></path>
-                <path
-                  d="M95.3049 14.552C94.6809 14.336 94.1289 14.264 93.4809 14.264C93.0489 14.264 92.6889 14.288 92.3529 14.432V23H89.2569V12.224C90.1929 11.744 91.8009 11.408 93.3609 11.408C94.0329 11.408 95.2329 11.48 95.9529 11.744L95.3049 14.552Z"
-                  fill="black"
-                ></path>
-              </svg>
+              <LogoIcon width="65.4" height="22.87" />
             </a>
           </li>
           <li className="header-search">
             <div className="search-bar">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class=""
-              >
-                <path
-                  d="M17 17L13.2223 13.2156M15.3158 8.15789C15.3158 10.0563 14.5617 11.8769 13.2193 13.2193C11.8769 14.5617 10.0563 15.3158 8.15789 15.3158C6.2595 15.3158 4.43886 14.5617 3.0965 13.2193C1.75413 11.8769 1 10.0563 1 8.15789C1 6.2595 1.75413 4.43886 3.0965 3.0965C4.43886 1.75413 6.2595 1 8.15789 1C10.0563 1 11.8769 1.75413 13.2193 3.0965C14.5617 4.43886 15.3158 6.2595 15.3158 8.15789V8.15789Z"
-                  stroke="#989898"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                ></path>
-              </svg>
+              <SearchBarIcon width="20" height="20" />
               <input type="text" placeholder="Search" />
             </div>
           </li>
           <li>
             <nav className="header-nav">
-              <NavLink
-                to="/"
-                className={({ isActive }) => (isActive ? "active-nav" : "")}
-              >
-                Home
-              </NavLink>
-
-              <NavLink
-                to="/about"
-                className={({ isActive }) => (isActive ? "active-nav" : "")}
-              >
-                About
-              </NavLink>
-
-              <NavLink
-                to="/contact"
-                className={({ isActive }) => (isActive ? "active-nav" : "")}
-              >
-                ContactUs
-              </NavLink>
-
-              <NavLink
-                to="/blog"
-                className={({ isActive }) => (isActive ? "active-nav" : "")}
-              >
-                Blog
-              </NavLink>
+              {PATH.map((item) => (
+                <NavLink
+                  key={item.id}
+                  to={item.url}
+                  className={({ isActive }) => (isActive ? "active-nav" : "")}
+                >
+                  {item.content}
+                </NavLink>
+              ))}
             </nav>
           </li>
           <li className="header-icons">
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class=""
-            >
-              <path
-                d="M11 7C8.239 7 6 9.216 6 11.95C6 14.157 6.875 19.395 15.488 24.69C15.6423 24.7839 15.8194 24.8335 16 24.8335C16.1806 24.8335 16.3577 24.7839 16.512 24.69C25.125 19.395 26 14.157 26 11.95C26 9.216 23.761 7 21 7C18.239 7 16 10 16 10C16 10 13.761 7 11 7Z"
-                stroke="#191919"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class=""
-            >
-              <path
-                d="M3 5H7L10 22H26M10 16.6667H25.59C25.7056 16.6667 25.8177 16.6267 25.9072 16.5535C25.9966 16.4802 26.0579 16.3782 26.0806 16.2648L27.8806 7.26479C27.8951 7.19222 27.8934 7.11733 27.8755 7.04552C27.8575 6.97372 27.8239 6.90679 27.7769 6.84956C27.73 6.79234 27.6709 6.74625 27.604 6.71462C27.5371 6.68299 27.464 6.66662 27.39 6.66667H8M12 26C12 26.5523 11.5523 27 11 27C10.4477 27 10 26.5523 10 26C10 25.4477 10.4477 25 11 25C11.5523 25 12 25.4477 12 26ZM26 26C26 26.5523 25.5523 27 25 27C24.4477 27 24 26.5523 24 26C24 25.4477 24.4477 25 25 25C25.5523 25 26 25.4477 26 26Z"
-                stroke="#191919"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class=""
-            >
-              <path
-                d="M24 27V24.3333C24 22.9188 23.5224 21.5623 22.6722 20.5621C21.8221 19.5619 20.669 19 19.4667 19H11.5333C10.331 19 9.17795 19.5619 8.32778 20.5621C7.47762 21.5623 7 22.9188 7 24.3333V27M21 9.5C21 11.9853 18.9853 14 16.5 14C14.0147 14 12 11.9853 12 9.5C12 7.01472 14.0147 5 16.5 5C18.9853 5 21 7.01472 21 9.5Z"
-                stroke="#191919"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
+            <HeartIcon />
+            <CartIcon />
+            <ProfileIcon />
           </li>
           <li className="hamburger-icons">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class=""
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M32.5 13.75H7.5V11.25H32.5V13.75Z"
-                fill="#080341"
-              ></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M32.5 21.25H7.5V18.75H32.5V21.25Z"
-                fill="#080341"
-              ></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M32.5 28.75H7.5V26.25H32.5V28.75Z"
-                fill="#080341"
-              ></path>
-            </svg>
+            <MenuIcon width="40" height="40" />
           </li>
         </ul>
       </header>
