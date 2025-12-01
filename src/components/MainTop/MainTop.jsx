@@ -1,5 +1,5 @@
 import "./MainTop.css";
-import mainTopImg from "@assets/image/MainTop.png";
+import { MainTopImg } from "@assets/image";
 
 export default function MainTop() {
   return (
@@ -18,7 +18,7 @@ export default function MainTop() {
           </div>
           <div className="main-top-right">
             <img
-              src={mainTopImg}
+              src={MainTopImg}
               alt="iphone 14 Pro 대형 배너"
               className="main-top-img"
             />
