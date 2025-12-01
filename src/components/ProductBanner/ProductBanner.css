@@ -1,0 +1,233 @@
+.banner-wrapper {
+  display: flex;
+  margin-bottom: 300px;
+  width: 100%;
+}
+
+.left-col,
+.right-col {
+  width: 50%;
+  display: flex;
+}
+
+.left-col {
+  flex-direction: column;
+}
+
+.bottom-stack {
+  display: flex;
+}
+
+.bottom-stack img {
+  margin-right: 20px;
+}
+
+.pro-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pro-item h1 {
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.pro-item span {
+  font-weight: 500;
+}
+
+.pro-item p {
+  font-size: 16px;
+  color: rgb(144, 144, 144);
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.pro-item-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 16px;
+  max-width: 300px;
+}
+
+.mobile {
+  display: none;
+}
+
+.desk {
+  display: block;
+}
+
+.playstation h1 {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.macbook h1 {
+  font-size: 64px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.macbook span {
+  font-weight: 100;
+}
+
+.airpods,
+.macbook {
+  background-color: rgb(237, 237, 237);
+}
+
+.vision {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.vision h1 {
+  color: white;
+}
+
+.vision img {
+  width: 136px;
+  height: 190px;
+}
+
+.vision h1,
+.airpods h1 {
+  font-size: 29px;
+}
+
+.vision p,
+.airpods p,
+.playstation p,
+.macbook p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.macbook {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 56px 0 56px 56px;
+}
+
+.macbook-btn {
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 182px;
+  height: 56px;
+}
+
+@media (max-width: 1024px) {
+  .banner-wrapper {
+    flex-direction: column;
+  }
+
+  .left-col,
+  .right-col,
+  .bottom-stack {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .airpods {
+    order: 1;
+  }
+  .airpods img {
+    width: 192px;
+    height: 200px;
+  }
+  .macbook img {
+    width: 330px;
+    height: 200px;
+  }
+
+  .vision img {
+    width: 326px;
+    height: 193px;
+  }
+
+  .pro-item-text {
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .vision {
+    order: 2;
+  }
+  .playstation {
+    order: 3;
+  }
+  .macbook {
+    order: 4;
+  }
+
+  .vision p,
+  .airpods p,
+  .playstation p,
+  .macbook p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .vision h1,
+  .airpods h1,
+  .playstation h1,
+  .macbook h1 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .macbook h1 {
+    font-weight: 100;
+    line-height: 40px;
+  }
+
+  .macbook h1 {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .macbook {
+    font-weight: 100;
+  }
+
+  .macbook span {
+    font-weight: 500;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desk {
+    display: none;
+  }
+
+  .pro-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    padding: 40px 16px;
+  }
+}
