@@ -12,4 +12,15 @@ export default defineConfig({
       },
     }),
   ],
+  resolve: {
+    alias: {
+      "@": "/src",
+      "@components": "/src/components",
+      "@hooks": "/src/hooks",
+      "@assets": "/src/assets",
+      "@constants": "/src/constants",
+      "@pages": "/src/pages",
+      "@utils": "/src/utils",
+    },
+  },
 });
