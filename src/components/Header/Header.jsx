@@ -1,13 +1,15 @@
-import { Link, NavLink } from "react-router-dom";
-import LogoIcon from "../../assets/icons/Header/Logo.svg?react";
-import SearchBarIcon from "../../assets/icons/Header/SearchBar.svg?react";
-import HeartIcon from "../../assets/icons/Header/Heart.svg?react";
-import CartIcon from "../../assets/icons/Header/Cart.svg?react";
-import ProfileIcon from "../../assets/icons/Header/Profile.svg?react";
-import MenuIcon from "../../assets/icons/Header/Menu.svg?react";
+import { NavLink } from "react-router-dom";
+import {
+  LogoIcon,
+  SearchBarIcon,
+  HeartIcon,
+  CartIcon,
+  ProfileIcon,
+  MenuIcon,
+} from "@assets/icons";
 
 import "./Header.css";
-import { PATH } from "../../constants/path";
+import { PATH } from "@constants/path";
 
 export default function Header() {
   return (

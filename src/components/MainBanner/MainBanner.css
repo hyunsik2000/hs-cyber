@@ -1,4 +1,4 @@
-.main-top-section {
+.main-banner-section {
   background: #211c24;
   color: white;
   overflow: hidden;
@@ -7,7 +7,7 @@
   height: 769px;
 }
 
-.main-top-inner {
+.main-banner-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,21 +15,21 @@
   gap: 48px;
 }
 
-.main-top-left {
+.main-banner-left {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
 }
 
-.main-top-label {
+.main-banner-label {
   color: #909090;
   font-size: 25px;
   line-height: 32px;
   font-weight: 600;
 }
 
-.main-top-title {
+.main-banner-title {
   font-size: 72px;
   font-weight: 100;
   line-height: 72px;
@@ -37,11 +37,11 @@
   margin: 0;
 }
 
-.main-top-title span {
+.main-banner-title span {
   font-weight: 700;
 }
 
-.main-top-description {
+.main-banner-description {
   font-size: 19px;
   font-weight: 400;
   color: #c0c0c0;
@@ -49,7 +49,7 @@
   line-height: 24px;
 }
 
-.main-top-btn {
+.main-banner-btn {
   color: white;
   padding: 16px 56px;
   border-radius: 6px;
@@ -58,36 +58,36 @@
   width: 191px;
 }
 
-.main-top-right {
+.main-banner-right {
   margin-top: 0;
 }
 
-.main-top-img {
+.main-banner-img {
   max-width: 406px;
 }
 
 @media (min-width: 1024px) {
-  .main-top-inner {
+  .main-banner-inner {
     flex-direction: row;
     min-width: 1064px;
     padding: 0 8px;
   }
 
-  .main-top-left {
+  .main-banner-left {
     align-items: flex-start;
   }
 
-  .main-top-title {
+  .main-banner-title {
     font-size: 96px;
     line-height: 72px;
     text-align: left;
   }
 
-  .main-top-description {
+  .main-banner-description {
     font-size: 18px;
   }
 
-  .main-top-right {
+  .main-banner-right {
     height: 600px;
   }
 }
