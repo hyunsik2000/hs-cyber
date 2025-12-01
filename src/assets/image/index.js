@@ -1,1 +1,1 @@
-export { default as MainTopImg } from "./Home/MainTop.png";
+export { default as MainBannerImg } from "./Home/MainTop.png";

@@ -1,9 +1,9 @@
-import MainTop from "@components/MainTop/MainTop";
+import MainBanner from "@/components/MainBanner/MainBanner";
 
 const Home = () => {
   return (
     <section>
-      <MainTop />
+      <MainBanner />
     </section>
   );
 };
