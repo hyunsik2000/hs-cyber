@@ -1,4 +1,4 @@
-import MainTop from "../components/MainTop/MainTop";
+import MainTop from "@components/MainTop/MainTop";
 
 const Home = () => {
   return (
