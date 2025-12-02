@@ -21,6 +21,7 @@ export default defineConfig({
       "@constants": "/src/constants",
       "@pages": "/src/pages",
       "@utils": "/src/utils",
+      "@data": "/src/data",
     },
   },
 });
