@@ -1,1 +1,9 @@
 export { default as MainBannerImg } from "./Home/MainTop.png";
+export { default as PlayStationImg } from "./Home/PlayStation.png";
+export { default as AirPodsMaxImg } from "./Home/AirPods_Max.png";
+export { default as MacBookImg } from "./Home/MacBook.png";
+export { default as VisionProImg } from "./Home/Vision_Pro.png";
+export { default as MobilePlayStationImg } from "./Home/PlayStation_mobile.png";
+export { default as MobileAirPodsMaxImg } from "./Home/AirPods_Max_mobile.png";
+export { default as MobileMacBookImg } from "./Home/MacBook_mobile.png";
+export { default as MobileVisionProImg } from "./Home/Vision_Pro_mobile.png";
