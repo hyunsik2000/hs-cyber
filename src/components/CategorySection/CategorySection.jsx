@@ -14,12 +14,15 @@ export default function CategorySection() {
           </div>
         </div>
         <div className="category-tabs">
-          {categorySectionData.map(({ id, content, icon: Icon }) => (
-            <button key={id} className="category-card" type="button">
-              <Icon />
-              <p>{content}</p>
-            </button>
-          ))}
+          {categorySectionData.map(({ id, content, icon }) => {
+            const Icon = icon;
+            return (
+              <button key={id} className="category-card" type="button">
+                <Icon />
+                <p>{content}</p>
+              </button>
+            );
+          })}
         </div>
       </div>
     </section>
